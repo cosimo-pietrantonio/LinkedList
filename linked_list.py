@@ -111,9 +111,6 @@ class LinkedList:
         else:
             raise Exception(f"The specified position '{position_idx}' exceeds the lenght of the list.")
 
-
-
-
     def info(self):
         print(' ----------------LIST INFO----------------\n\n',
               f'Number of items in the list: {len(self.node_list)}\n\n',
