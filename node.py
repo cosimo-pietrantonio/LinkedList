@@ -13,18 +13,18 @@ class Node:
 
         Node._NODE_COUNTER += 1
     
-    def get_id(self):
+    def get_id(self) -> int:
         return self.id
     
-    def get_value(self):
+    def get_value(self) -> Any:
         return self.value
     
-    def get_pointer(self):
+    def get_pointer(self) -> Node|None:
         return self.node_pointer
 
     
-    def set_value(self,new_value:Any)->None:
+    def set_value(self,new_value:Any) -> None:
         self.value = new_value
 
-    def set_pointer(self,pointed_node: Node)->None:
+    def set_pointer(self,pointed_node: Node) -> None:
         self.node_pointer = pointed_node
